@@ -434,3 +434,11 @@ class EasyPing:
         
         print('\nLast ping result\n')
         return self.last_result
+    
+    def __call__(self, **args):
+        ''' Method __call__ class EasyPing.
+            Return method ping.
+
+        '''
+
+        return self.ping(**args)   
